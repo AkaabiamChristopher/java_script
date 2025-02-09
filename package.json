@@ -1,0 +1,19 @@
+{
+  "name": "javascript",
+  "version": "1.0.0",
+  "description": "\"# java_script\"",
+  "main": "doWhileLoopInJs.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AkaabiamChristopher/java_script.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AkaabiamChristopher/java_script/issues"
+  },
+  "homepage": "https://github.com/AkaabiamChristopher/java_script#readme"
+}
