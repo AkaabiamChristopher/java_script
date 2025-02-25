@@ -1,0 +1,36 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    flex-basis: 15%;
+}
+
+.icon {
+    display: inline-block;
+}
+
+.icon-text {
+    display: inline-block;
+}
+
+.link a{
+    /* flex-basis: 40%; */
+    padding-left: 20px;
+    text-decoration: none;
+    color: black;
+    
+}
+
+.menu-button{
+    margin-left: auto;    
+}
+
+.home {
+    display: flex;
+    padding: 5px;
+    justify-content: space-between;
+    align-items: center;
+}

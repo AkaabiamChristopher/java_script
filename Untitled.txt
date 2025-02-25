@@ -1,0 +1,26 @@
+
+    def test_channel_down(self):
+        self.tv.turn_on()
+        self.tv.channel
+        self.assertEqual(self.tv.channel, 1)
+
+
+    def test_set_channel(self):
+        self.tv.turn_on()
+        self.assertEqual(self.tv.channel, 1)
+        self.assertTrue(self.tv.is_on)
+        self.tv.channel_up()
+
+    def test_channel_up(self):
+      #  print(self.tv)
+        self.tv.turn_on()
+        self.tv.channel_up()
+        self.assertEqual(self.tv.channel, 1)
+
+   
+    def test_mute(self):
+        self.tv.turn_on()
+        self.tv.increase_volume()
+        self.tv.mute()
+        self.assertTrue(self.tv.is_muted)
+        self.assertEqual(self.tv.volume_level, 0)

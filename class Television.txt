@@ -1,0 +1,38 @@
+class Television:
+    def __init__(self):
+        self.is_on = True
+        self.volume_level = 0
+        self.channel = 1
+        self.is_muted = False
+
+   // def turn_on(self):
+  //def      self.is_on = True
+
+    def turn_off(self):
+        self.is_on = False
+
+    def increase_volume(self):
+        if self.is_on:
+           self.volume_level += 1
+
+    def decrease_volume(self):
+        if self.is_on:
+               self.volume_level -= 1
+
+    def channel_up(self):
+        if self.is_on:
+           return self.channel
+
+
+    def channel_down(self):
+        if self.is_on:
+           self.channel -= 1
+
+    def set_channel(self, channel):
+        if self.is_on:
+         self.channel = channel
+
+    def mute(self):
+        if self.is_on:
+           self.is_muted = True
+           self.volume_level = 0
