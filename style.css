@@ -14,10 +14,11 @@
 
 .icon-text {
     display: inline-block;
+    color: dodgerblue;
 }
 
 .link a{
-    /* flex-basis: 40%; */
+   
     padding-left: 20px;
     text-decoration: none;
     color: black;
@@ -33,4 +34,35 @@
     padding: 5px;
     justify-content: space-between;
     align-items: center;
+}
+.home-text h1 span{
+    color: dodgerblue; 
+}
+.about {
+    text-align: center;
+    padding: 4px;
+}
+.about {
+    fonnt-size:3px;
+    font-size: 3px;
+    font weight: border;
+    margin-bottom: 2px;
+
+}
+
+.para{
+    margin-left: 35%;
+    margin-right: 35%;
+    text-align: center;
+}
+.abouth{
+    text-align: center;
+}
+.service-heading {
+    margin-bottom: 20px;
+    
+}
+.service-text{
+    margin-right: 70%;
+    float: left;
 }
