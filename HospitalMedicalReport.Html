@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MediCare - Medical App</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="HospitalMedicalReport.Css">
+</head>
+<body>
+    <!-- Home Screen -->
+    <div class="screen home-screen">
+        <header class="app-header">
+            <div class="header-left">
+                <p class="greeting">Welcome To DAC Medical Records Management.</p>
+                <h1 class="username">Book an Appointments with doctors.Chat with doctors via Appointments letters and get consulted</h1>
+            </div>
+            <div class="header-right">
+                <div class="notification-icon">
+                    <i class="fas fa-bell"></i>
+                   
+                </div>
+                <img src="c:\Users\Dell\Downloads\medical 1.png" alt="Profile" class="profile-pic">
+            </div>
+        </header>
+
+        <div class="search-box">
+            <i class="fas fa-search"></i>
+            <input type="text" placeholder="Search doctor, medicines, etc...">
+        </div>
+
+        <div class="services-section">
+            <h2 class="section-title">Services</h2>
+            <div class="services-grid">
+                <a href="#doctors" class="service-card">
+                    <div class="icon-container blue">
+                        <i class="fas fa-user-md"></i>
+                    </div>
+                    <p>Doctors</p>
+                </a>
+                <a href="#pharmacy" class="service-card">
+                    <div class="icon-container purple">
+                        <i class="fas fa-pills"></i>
+                    </div>
+                    <p>Pharmacy</p>
+                </a>
+                <a href="#hospitals" class="service-card">
+                    <div class="icon-container red">
+                        <i class="fas fa-hospital"></i>
+                    </div>
+                    <p>Hospitals</p>
+                </a>
+                <a href="#emergency" class="service-card">
+                    <div class="icon-container yellow">
+                        <i class="fas fa-ambulance"></i>
+                    </div>
+                    <p>Emergency</p>
+                </a>
+            </div>
+        </div>
+
+        <div class="doctors-section">
+            <div class="section-header">
+                <h2 class="section-title">Top Doctors</h2>
+                <a href="#all-doctors" class="see-all">See all</a>
+            </div>
+            <div class="doctors-scroll">
+                <a href="#doctor1" class="doctor-card">
+                    <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Dr. Sarah Miller">
+                    <h3>Dr. Sarah Miller</h3>
+                    <p>Cardiologist</p>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <span>4.8</span>
+                    </div>
+                </a>
+                <a href="#doctor2" class="doctor-card">
+                    <img src="https://randomuser.me/api/portraits/men/22.jpg" alt="Dr. James Wilson">
+                    <h3>Dr. James Wilson</h3>
+                    <p>Neurologist</p>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <span>4.9</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <nav class="bottom-nav">
+            <a href="#home" class="nav-item active">
+                <i class="fas fa-home"></i>
+                <span>Home</span>
+            </a>
+            <a href="#search" class="nav-item">
+                <i class="fas fa-search"></i>
+                <span>Search</span>
+            </a>
+            <a href="#appointments" class="nav-item">
+                <i class="fas fa-calendar-alt"></i>
+                <span>Appointments</span>
+            </a>
+            <a href="#profile" class="nav-item">
+                <i class="fas fa-user"></i>
+                <span>Profile</span>
+            </a>
+        </nav>
+    </div>
+
+    <!-- Search Screen (hidden by default) -->
+    <div id="search" class="screen search-screen hidden">
+        <header class="search-header">
+            <a href="#home" class="back-btn">
+                <i class="fas fa-arrow-left"></i>
+            </a>
+            <div class="search-input">
+                <i class="fas fa-search"></i>
+                <input type="text" placeholder="Search doctor, medicines, etc...">
+            </div>
+        </header>
+
+        <div class="search-content">
+            <div class="search-categories">
+                <h3>Categories</h3>
+                <div class="categories-grid">
+                    <a href="#doctors" class="category-card">
+                        <div class="category-icon blue">
+                            <i class="fas fa-user-md"></i>
+                        </div>
+                        <p>Doctors</p>
+                    </a>
+                    <a href="#medicines" class="category-card">
+                        <div class="category-icon purple">
+                            <i class="fas fa-pills"></i>
+                        </div>
+                        <p>Medicines</p>
+                    </a>
+                    <a href="#hospitals" class="category-card">
+                        <div class="category-icon red">
+                            <i class="fas fa-hospital"></i>
+                        </div>
+                        <p>Hospitals</p>
+                    </a>
+                    <a href="#labs" class="category-card">
+                        <div class="category-icon green">
+                            <i class="fas fa-flask"></i>
+                        </div>
+                        <p>Labs</p>
+                    </a>
+                </div>
+            </div>
+
+            <div class="popular-searches">
+                <h3>Popular Searches</h3>
+                <div class="search-tags">
+                    <a href="#cardiologist" class="tag">Cardiologist</a>
+                    <a href="#dentist" class="tag">Dentist</a>
+                    <a href="#eye-specialist" class="tag">Eye Specialist</a>
+                    <a href="#pediatrician" class="tag">Pediatrician</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Doctors Screen (hidden by default) -->
+    <div id="doctors" class="screen doctors-screen hidden">
+        <header class="doctors-header">
+            <a href="#home" class="back-btn">
+                <i class="fas fa-arrow-left"></i>
+            </a>
+            <h1>Doctors</h1>
+        </header>
+
+        <div class="doctors-list">
+            <a href="#doctor1" class="doctor-profile">
+                <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Dr. Sarah Miller">
+                <div class="doctor-info">
+                    <h2>Dr. Sarah Miller</h2>
+                    <p>Cardiologist • Royal Hospital</p>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <span>4.8 (120 reviews)</span>
+                    </div>
+                </div>
+                <i class="fas fa-chevron-right"></i>
+            </a>
+            <a href="#doctor2" class="doctor-profile">
+                <img src="https://randomuser.me/api/portraits/men/65.jpg" alt="Dr. Robert Chen">
+                <div class="doctor-info">
+                    <h2>Dr. Robert Chen</h2>
+                    <p>Cardiologist • City Medical</p>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <span>4.9 (95 reviews)</span>
+                    </div>
+                </div>
+                <i class="fas fa-chevron-right"></i>
+            </a>
+        </div>
+    </div>
+</body>
+</html>
